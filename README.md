@@ -12,6 +12,19 @@
 </a>
 </p>
 
+## Overview
+
+`safely` provides a higher-order function used to capture side effects from function invocations and handle them in a safe and consistent manner.
+
+```python
+from safely import safely
+
+def f(): raise Exception("Something went wrong!")
+
+result = safely(f)()
+>>> SafeResult(value=None, error=Exception('Something went wrong!'))
+```
+
 ## Installation
 
 ```shell
