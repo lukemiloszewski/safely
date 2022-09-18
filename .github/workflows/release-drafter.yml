@@ -22,7 +22,7 @@ jobs:
           labels: "breaking, feature, fix, bug, removal, chore, dependency, question, skip"
 
       - name: Add PR to Draft Release Changelog
-        if: ${{ success() }}
+        if: github.event_name == 'push'
         uses: release-drafter/release-drafter@v5.21.0
         with:
           config-name: release-drafter.yml
