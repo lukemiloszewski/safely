@@ -20,7 +20,7 @@ Changelog = "https://github.com/lukemiloszewski/safely/releases"
 python = ">=3.8.0,<3.11.0"
 
 [tool.poetry.dev-dependencies]
-black = {extras = ["jupyter"], version = "^22.6.0"}
+black = {extras = ["jupyter"], version = "^22.10.0"}
 flake8 = "^5.0.4"
 isort = "^5.10.0"
 ipykernel = "^6.15.3"
